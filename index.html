@@ -6,61 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IsaacHS - Portfolio</title>
     <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
+
   </head>
   <body>
     <div class="container-fluid">
-      <header class="row text-white p-3 bg-header">
-        <div class="col-lg-6 col-12 text-center text-lg-start">
-          <h1 class="name-h">Isaac Moisés Herrera Sandí</h1>
+      <header class="row principal-header">
+        <div class="col-12 col-sm-12 text-center ">
+          <h1>Isaac Herrera</h1>
         </div>
-        <div class="col-lg-2 col-0"></div>
-        <div class="col-lg-4 col-12">
-          <nav
-            class="
-              navbar 
-              navbar-expand
-              navbar-expand-sm
-              justify-content-lg-end 
-              justify-content-center
-            "
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#inicio" class="nav-link link">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#yo" class="nav-link link">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contacto" class="nav-link link">Contacto</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="col-12 col-sm-12">
+          <ul class="nav nav-tabs justify-content-center border-bottom-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech">Tecnologias</a>
+            </li>
+          </ul>
         </div>
       </header>
-      <div class="row">
-        <div class="col-lg-12 p-0">
-          <img src="./img/programming.jpg" alt="programming" class="img-fluid" />
-          <div class="contenedor-presentacion justify-content-center">
-            <div class="presentacion">
-              <img
-                src="./img/fotoPerfil.jpg"
-                alt="Foto de perfil"
-                class="ft-perfil rounded-circle border border-primary"
-              />
-              <h2 class="name">Isaac Moisés Herrera Sandí</h2>
-              <p>Desarrollador web</p>
+      <section class="row principal-section">
+        <div class="col-12 col-md-6 justify-content-center container-presentation">
+          <div class="presentation">
+            <div class="presentation-item">
+              <img src="./img/fotoPerfil.jpg" alt="Perfil photo" class="rounded-circle perfil-photo">
+            </div>
+            <div class="presentation-item">
+              <h2>Isaac Moisés Herrera Sandí</h2>
+              <p><strong>Estudiante de Ingeniería de Sistemas</strong></p>
+              <p><i>Orientado al Desarrollo web</i></p>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-12 col-md-6 text-center pt-2" id="aboutme">
+          <h2 class="d-block">Sobre Mi</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga soluta odit earum modi 
+            sed esse illo, amet aliquid mollitia, error facilis cumque blanditiis vel magni ad eligendi,
+             voluptatem placeat. Repudiandae.</p>
+        </div>
+      </section>
+      <section class="row" id="tech">
+        
+
+   
+
+      </section>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
