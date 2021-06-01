@@ -10,18 +10,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/70411b08e9.js" crossorigin="anonymous"></script>
+    
 
   </head>
   <body>
     <div class="container-fluid">
       <header class="row principal-header">
-        <div class="col-12 col-sm-12 text-center ">
-          <h1>Isaac Herrera</h1>
+        <div class="col-10 col-sm-12 col-md-12 text-center ">
+          <h1>Isaac Moisés Herrera Sandí</h1>
         </div>
-        <div class="col-12 col-sm-12">
-          <ul class="nav nav-tabs justify-content-center border-bottom-0">
+
+
+        <div class="col-2 d-sm-none menu">
+            <label for="menu-hamburger"><i class="fas fa-bars menu-ham"></i></label>
+            <input type="checkbox" name="menu-hamburger" id="menu-hamburger" class="d-none">
+        </div>
+
+
+        <div class="col-sm-12 d-sm-inline bar-menu" id="menu">
+          <ul class="nav nav-tabs justify-content-center border-bottom-0 links-menu text-center" id="links-menu">
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">Sobre mi</a>
+              <a class="nav-link" href="#me">Sobre mi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contacto</a>
@@ -29,10 +39,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#tech">Tecnologias</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
           </ul>
         </div>
       </header>
-      <section class="row principal-section">
+      <section class="row principal-section" id="me">
         <div class="col-12 col-md-6 justify-content-center container-presentation">
           <div class="presentation">
             <div class="presentation-item">
@@ -55,9 +68,15 @@
       <section class="row" id="tech">
         
 
-   
-
       </section>
+      <footer class="row principal-footer justify-content-center">
+        <div class="col-8 col-sm-8 medias">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </footer>
     </div>
     <script src="./app.js"></script>
   </body>
