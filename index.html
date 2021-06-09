@@ -5,27 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IsaacHS - Portfolio</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
+   
     <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/70411b08e9.js"
-      crossorigin="anonymous"
-    ></script> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/70411b08e9.js" crossorigin="anonymous"></script> 
 
     <!-- BOOTSTRAP 4 Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    
     <!-- CUSTOM Styles -->
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
    
   </head>
   <body>
@@ -66,7 +60,7 @@
         <div class="col-md-6">
           <div class="mx-auto p-4">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="img/fotoPerfil.jpg" alt="Perfil photo" class="rounded-circle" id="perfil-photo"/>
+              <img src="assets/img/fotoPerfil.jpg" alt="Perfil photo" class="rounded-circle shadow" id="perfil-photo"/>
             </div>
             <div class="text-center d-flex flex-column mt-3">
               <h2 class="fs-xs-5 fs-sm-5 fs-md-4">Isaac Moisés Herrera Sandí</h2>
@@ -75,14 +69,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center bg-gray-20" id="aboutme">
+        <div class="col-md-6 d-flex align-items-center bg-gray-20 p-2" id="aboutme">
           <div>
-            <h2 class="fw-bold fs-xs-4 fs-md-5 text-center">Sobre Mi</h2>
+            <h2 class="fw-bold fs-xs-4 fs-md-5 text-center text-primary">Sobre Mi</h2>
             <p class="fs-xs-6 fs-md-6 text-center">
-              Soy estudiante de Ingeniería de sistemas, llevo poco tiempo en el mundo de la programación
+              Me llamo Isaac, tengo 20 años, soy estudiante de Ingeniería de sistemas, llevo poco tiempo en el mundo de la programación
               y tengo muchas ganas de aprender más, me estoy enfocando en el desarrollo web 
-              porque me parece intersante esa rama de la programación, soy honesto y responsable, me gusta dibujar y programar,
-              me gustan los animales, y tengo 20 años.
+              porque me parece intersante esta rama de la programación, soy una persona honesta y responsable, en mis tiempos libres dibujo o programar, y
+              me gustan las mascotas.
             </p>
           </div>
         </div>
@@ -90,23 +84,24 @@
 
 
 
-      <section class="row mt-5" id="projects">
-        <div class="col-md-12 text-center">
-          <h2 class="fw-bold fs-xs-4 fs-sm-3">Proyectos</h2>
+      <section class="row pt-3" id="projects">
+        <div class="col-md-12 text-center pb-3">
+          <h2 class="fw-bold fs-xs-4 fs-sm-3 text-primary">Proyectos</h2>
         </div>
-        <div class="col-md-10 col-xl-8 rounded mb-4 pb-2 mx-auto">
-          <h3 class="text-center text-primary fs-xs-5 fs-sm-4">Traductor Binario</h3>
-          <div class="border overflow-auto d-flex justify-content-sm-center justify-content-start p-2">
-            <img src="img/binary-translator.png" alt="Project photo" class="">
+        <div class="col-md-10 col-xl-8 rounded mb-4 pb-2 mx-auto shadow border">
+          <h3 class="text-center fs-xs-5 fs-sm-4 p-2">Traductor Binario</h3>
+          <div class="rounded overflow-auto d-flex justify-content-sm-center justify-content-start p-2 shadow">
+            <img src="assets/img/binary-translator.png" alt="Project photo" class="">
           </div>
           <a href="#" class="btn btn-primary btn-block">Ver el código</a>
         </div>
-        <div class="col-md-10 col-xl-8 rounded mb-5 pb-2 mx-auto ">
-          <h3 class="text-center text-primary fs-xs-5 fs-sm-4">TIC TAC TOE</h3>
-          <div class="border overflow-auto d-flex justify-content-start p-2 ">
-            <img src="img/m-success.png" alt="Project photo" class="img-fluid m-1">
-            <img src="img/m-warning.png" alt="Project photo" class="img-fluid m-1">
-            <img src="img/m-danger.png" alt="Project photo" class="img-fluid m-1">
+        
+        <div class="col-md-10 col-xl-8 rounded mb-5 pb-2 mx-auto shadow border">
+          <h3 class="text-center fs-xs-5 fs-sm-4 p-2">Tic Tac Toe</h3>
+          <div class="rounded overflow-auto d-flex justify-content-start p-2 shadow">
+            <img src="assets/img/m-success.png" alt="Project photo" class="img-fluid m-1">
+            <img src="assets/img/m-warning.png" alt="Project photo" class="img-fluid m-1">
+            <img src="assets/img/m-danger.png" alt="Project photo" class="img-fluid m-1">
           </div>
           <a href="#" class="btn btn-primary btn-block">Ver el código</a>
         </div>
@@ -114,21 +109,25 @@
 
       <section class="row bg-gray-10 border-bottom" id="tech"></section>
 
-      <footer class="row rounded bg-gray-20" id="contact">
+      <footer class="row rounded" id="contact">
         <div class="col-sm-12 mt-3">
-          <h2 class="text-center fs-xs-4 fs-sm-3">Contacto</h2>
+          <h2 class="text-center fs-xs-4 fs-sm-3 text-primary">Contacto</h2>
         </div>
         <div class="col-sm-8 mx-auto mb-4">
           <form class="m-4">
             <div class="form-group shadow">
-              <input type="text" placeholder="Nombre" class="form-control">
+              <input type="text" placeholder="Corréo" class="form-control">
             </div>
             <div class="form-group shadow">
-              <input type="email" placeholder="Email" class="form-control">
+              <input type="email" placeholder="Asunto" class="form-control">
             </div>
             <div class="form-group shadow">
               <textarea cols="30" rows="10" placeholder="Mensaje" class="form-control" ></textarea>
             </div>
+            <div class="form-group shadow">
+              <button type="button" class="btn btn-primary form-control">Enviar</button>
+            </div>
+            
           </form>
         </div>
         <div class="col-sm-12">
@@ -145,6 +144,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
      
       <!-- CUSTOM Scripts -->
-      <script src="./app.js"></script>
+      <script src="assets/js/app.js"></script>
   </body>
 </html>

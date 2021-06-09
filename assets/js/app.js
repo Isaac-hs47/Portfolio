@@ -62,7 +62,7 @@ function set_bar_color( domain = 0 ){
 function render_techs(technology = []) {
   let tech_list = "";
   $TECH.innerHTML = "";
-  $TECH.innerHTML = "<h2 class='col-sm-12 pt-3 fw-bold fs-xs-4 fs-sm-3'>Tecnologias</h2>";
+  $TECH.innerHTML = "<h2 class='col-sm-12 pt-3 fw-9 fs-xs-4 fs-sm-3 text-primary'>Tecnologias</h2>";
 
   technology.forEach((tech) => {
     tech_list += `
