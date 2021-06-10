@@ -8,16 +8,16 @@ let technologies = [
     icon_color: "#d35400",
   },
   {
-    name: "Javascript",
-    domain: 57,
-    icon: "fab fa-js",
-    icon_color: " #f4d03f ",
-  },
-  {
     name: "CSS",
     domain: 46,
     icon: "fab fa-css3-alt",
     icon_color: "#3498db",
+  },
+  {
+    name: "Javascript",
+    domain: 57,
+    icon: "fab fa-js",
+    icon_color: " #f4d03f ",
   },
   {
     name: "PHP",
@@ -33,13 +33,13 @@ let technologies = [
   },
   {
     name: "Git",
-    domain: 15,
+    domain: 19,
     icon: "fas fa-code-branch",
     icon_color: " #D35400 ",
   },
   {
     name: "Bootstrap",
-    domain: 7,
+    domain: 13,
     icon: "fab fa-bootstrap",
     icon_color: " #7d3c98 ",
   },
@@ -66,9 +66,14 @@ function render_techs(technology = []) {
 
   technology.forEach((tech) => {
     tech_list += `
-        <div class="technology col-4 col-sm-4 col-md-4">
+        <div class="technology col-6 col-sm-4">
             <div class="m-3">
                 <i class="${tech.icon} tech-icon mx-auto" style="color:${tech.icon_color}"></i>
+            </div>
+            <div class="w-100 bg-gray-20 border">
+              <div class="d-flex align-items-start" style="height:10px ;width:${tech.domain}%; background-color:${set_bar_color(tech.domain)}">
+                
+              </div>
             </div>
         </div>
         `;
@@ -89,3 +94,6 @@ function side_menu(e) {
 document.addEventListener("click",(e) => {
   side_menu(e);
 },true);
+document.addEventListener("mouseenter", (e) => {
+
+});
