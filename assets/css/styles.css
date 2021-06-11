@@ -1,8 +1,10 @@
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+  text-decoration: none;
+  list-style: none;
+} 
 html{
   scroll-behavior: smooth;
 }
@@ -14,38 +16,7 @@ body {
   width: 40%;
 }
 
-.project{
-  min-height: 200px;
-  max-height: 200px;
-}
-.name-project{
-  height: 50px;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-.name-project p{
-  line-height: 50px;
-}
-.project-body{
-  height: 110px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.btn-project{
-  height: 40px;
-  background-color: #16A085;
-  color:white;
-}
-.btn-project:hover{
-  color: white;
-  text-decoration: none;
-  background-color: #117A65;
-}
-.btns{
-  border: transparent;
-  padding: 5px;
-}
+
 #tech{
   display: flex;
   justify-content: center;
@@ -179,4 +150,73 @@ textarea{
 .medias i:hover{
   transform: scale(1.2);
   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tarjeta{
+  min-height: 200px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+}
+.tarjeta-content{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  height: 200px;
+
+  position: relative;
+}
+.tarjeta-name{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0051BD;
+  height: 30px;
+}
+.tarjeta-description{
+  text-align: center;
+  font-size: .9rem;
+  padding:0 5px;
+  height: 140px;
+}
+.tarjeta-button{
+  background-image: linear-gradient(to right, #00ADE2, #0051BD);
+  
+  width: 115%;
+  padding: 3px;
+  font-size: .8rem;
+  text-align: center;
+  color: white;
+
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.tarjeta-button:hover{
+  text-decoration: none;
+  color: white;
+  transform: scale(1.1);
+}
+.tarjeta-part-blue{
+  background-image: radial-gradient(farthest-corner at 100% 0%, #0051BD, #00ADE2);;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
