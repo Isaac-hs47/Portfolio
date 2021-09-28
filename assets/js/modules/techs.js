@@ -4,81 +4,86 @@ const TECHNOLOGIES = [
   {
     name: "HTML",
     domain: 80,
-    icon: "fab fa-html5",
-    icon_color: "#d35400",
+    img: "htm5_logo.png",
+    img_color: "#d35400",
   },
   {
     name: "CSS",
     domain: 46,
-    icon: "fab fa-css3-alt",
-    icon_color: "#3498db",
+    img: "css_logo.png",
+    img_color: "#3498db",
   },
   {
     name: "Javascript",
     domain: 57,
-    icon: "fab fa-js",
-    icon_color: " #f4d03f ",
+    img: "js_logo.png",
+    img_color: " #f4d03f ",
   },
   {
-    name: "PHP",
+    name: ".NET",
     domain: 33,
-    icon: "fab fa-php",
-    icon_color: " #8e44ad ",
+    img: "net_core_logo.png",
+    img_color: " #8e44ad ",
   },
   {
-    name: "Java",
+    name: "C#",
     domain: 30,
-    icon: "fab fa-java",
-    icon_color: "#85c1e9",
+    img: "Csharp_Logo.png",
+    img_color: "#85c1e9",
   },
   {
     name: "Git",
     domain: 19,
-    icon: "fas fa-code-branch",
-    icon_color: " #D35400 ",
+    img: "git_logo.png",
+    img_color: " #D35400 ",
   },
   {
     name: "Bootstrap",
     domain: 13,
-    icon: "fab fa-bootstrap",
-    icon_color: " #7d3c98 ",
+    img: "bootstrap_logo.png",
+    img_color: " #7d3c98 ",
   },
+  {
+    name: "SQL",
+    domain: 20,
+    img: "iconoSQL.png",
+    img_color: undefined
+  }
 ];
 
-function set_bar_color( domain = 0 ){
-    if(domain >= 80){
-     return "#58D68D";
-    }else if(domain >= 60){
-     return "#F1C40F";
-    }else if(domain >= 40){
-     return "#F39C12";
-    }else if(domain >= 20){
-     return "#D35400";
-    }else{
-     return "#C0392B";
-    }
- }
+// const set_bar_color = (domain = 0) => {
+//   if(domain >= 80){
+//     return "#58D68D";
+//    }else if(domain >= 60){
+//     return "#F1C40F";
+//    }else if(domain >= 40){
+//     return "#F39C12";
+//    }else if(domain >= 20){
+//     return "#D35400";
+//    }else{
+//     return "#C0392B";
+//    }
+// };
 
 export default function render_techs() {
    let tech_list = "";
    $TECH.innerHTML = "";
-   $TECH.innerHTML = "<h2 class='col-sm-12 pt-3 fw-9 fs-xs-4 fs-sm-3 text-primary'>Tecnologias</h2>";
+   $TECH.innerHTML = "<h2 class='col-sm-12 pt-3 fw-9 fs-xs-4 fs-sm-3' style='color:var(--main-color)'>Tecnologías</h2>";
  
    TECHNOLOGIES.forEach((tech) => {
      
      tech_list += `
-         <div class="technology col-6 col-sm-4">
+         <div class="technology col-6 col-sm-4 col-lg-2">
              <div class="m-3">
-                 <i class="${tech.icon} tech-icon mx-auto" style="color:${tech.icon_color}"></i>
-             </div>
-             <div class="w-100 bg-gray-20 border">
-               <div class="d-flex align-items-start" style="height:10px ;width:${tech.domain}%; background-color:${set_bar_color(tech.domain)}">
-                 
-               </div>
-             </div>
+                 <img class="tech_logo" src="./assets/img/${tech.img}" alt="${tech.name} logo"/>
+             </div>         
          </div>
          `;
    });
  
    $TECH.innerHTML += tech_list;
  }
+
+//  <div class="w-100 bg-gray-30 border rounded" title="${tech.domain}%">
+//  <div class="d-flex align-items-start rounded" style="height:10px ;width:${tech.domain}%; background-image: linear-gradient(to right, var(--main-color),  var(--second-color))"></div>
+// </div>

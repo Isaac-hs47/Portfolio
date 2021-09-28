@@ -27,7 +27,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top shadow-sm bg-white">
       <div class="container">
-        <span class="navbar-brand text-primary fs-xs-5 fs-sm-5 fs-lg-4 fs-xl-3">Isaac Herrera</span>
+        <span class="navbar-brand fs-xs-5 fs-sm-5 fs-lg-4 fs-xl-3" style="color: var(--main-color); font-variant: small-caps;">Isaac Herrera</span>
         <button
           type="button"
           id="toggler"
@@ -46,10 +46,13 @@
               <a class="nav-link" href="#me">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tech">Tecnologias</a>
+              <a class="nav-link" href="#tech">Tecnologías</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achives">Logros</a>
             </li>
           </ul>
         </div>
@@ -60,23 +63,22 @@
         <div class="col-md-6">
           <div class="mx-auto p-4">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/fotoPerfil.jpg" alt="Perfil photo" class="rounded-circle shadow" id="perfil-photo"/>
+              <img src="assets/img/FotoIsaac.jpg" alt="Perfil photo" class="rounded-circle shadow" id="perfil-photo"/>
             </div>
             <div class="text-center d-flex flex-column mt-3">
               <h2 class="fs-xs-5 fs-sm-5 fs-md-4">Isaac Moisés Herrera Sandí</h2>
-              <p class="fs-md-6"><strong>Estudiante de Ingeniería de Sistemas</strong></p>
-              <p class="fs-md-6"><i>Orientado al Desarrollo web</i></p>
+              <p class="fs-md-6"><strong>Estudiante de Ingeniería de Informática</strong></p>
+              <p class="fs-md-6"><i>Programador Back-end ASP.NET Core 5 C#</i></p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center bg-gray-20 p-2" id="aboutme">
+        <div class="col-md-6 d-flex align-items-center p-2 bg-gray-10" id="aboutme">
           <div>
-            <h2 class="fw-bold fs-xs-4 fs-sm-3 fs-md-5 text-center text-primary">Sobre Mi</h2>
+            <h2 class="fw-bold fs-xs-4 fs-sm-3 fs-md-5 text-center" style="color:var(--main-color)">Sobre Mi</h2>
             <p class="fs-xs-6 fs-md-6 text-center">
               Me llamo Isaac, tengo 20 años, soy estudiante de Ingeniería de sistemas, llevo poco tiempo en el mundo de la programación
               y tengo muchas ganas de aprender más, me estoy enfocando en el desarrollo web 
-              porque me parece intersante esta rama de la programación, soy una persona honesta y responsable, en mis tiempos libres dibujo o programar, y
-              me gustan las mascotas.
+              porque me parece intersante esta rama de la programación, soy una persona honesta y responsable, en mis tiempos libres dibujo o programo.
             </p>
           </div>
         </div>
@@ -86,7 +88,7 @@
 
       <section class="row py-2 my-5" id="projects">
         <div class="col-md-12 text-center pb-3">
-          <h2 class="fw-bold fs-xs-4 fs-sm-3 text-primary">Proyectos</h2>
+          <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Proyectos</h2>
         </div>
 
           <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto mt-4">
@@ -94,7 +96,7 @@
               <div class="tarjeta-content rounded-left">
                 <p class="tarjeta-name">Traductor binario</p>
                 <p class="tarjeta-description">Traduce del código binario a texto y viceversa</p>
-                <a href="./assets/projects/Binary_translator/Translator_Index.html" class="tarjeta-button btn-block">Probar</a>
+                <a href="https://github.com/Isaac-hs47/Binary-translator.git" class="tarjeta-button btn-block" target="_blank">Ver Código</a>
               </div>
               <div class="tarjeta-part-blue rounded-right">
                 <img src="./assets/img/bin_icon.ico" alt="icon" class="tarjeta-icon ">
@@ -107,7 +109,7 @@
               <div class="tarjeta-content rounded-left">
                 <p class="tarjeta-name">Tic Tac Toe</p>
                 <p class="tarjeta-description">Es un juego, que se basa de ir marcando casillas hasta que haya un ganador</p>
-                <a href="./assets/projects/tic_tac_toe/Game_Index.html" class="tarjeta-button btn-block">Probar</a>
+                <a href="https://github.com/Isaac-hs47/Tic-Tac-Toe.git" class="tarjeta-button btn-block" target="_blank">Ver Código</a>
               </div>
               <div class="tarjeta-part-blue rounded-right">
                 <ul class="h4 text-white font-weight-bold">
@@ -118,28 +120,83 @@
               </div>
             </div>
           </div>
-      
+
       </section>
 
-      <section class="row bg-gray-10 border-bottom" id="tech"></section>
+      <section class="row border-bottom bg-gray-10" id="tech"></section>
+
+
+      <section class="row pt-2" id="achives">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Logros</h2>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Nivel Básico-Intermedio en tecnologías Front-end</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate certificate-bronze">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Principiante en ASP.NET Core 5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate certificate-bronze">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Programador en C#</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate certificate-bronze">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Conocimiento básico de SQL</span>
+            </div>
+          </div>
+        </div>
+
+       
+      </section>
 
       <footer class="row rounded" id="contact">
         <div class="col-sm-12 mt-3">
-          <h2 class="text-center fs-xs-4 fs-sm-3 text-primary">Contacto</h2>
+          <h2 class="text-center fs-xs-4 fs-sm-3" style="color:var(--main-color)">Contacto (Deshabilitado)</h2>
         </div>
-        <div class="col-sm-8 mx-auto mb-4">
+        <div class="col-sm-8 mx-auto mb-4 rounded">
           <form class="m-4">
-            <div class="form-group shadow">
-              <input type="email" placeholder="Corréo" class="form-control">
+            <div class="form-group">
+              <input type="email" placeholder="Corréo" class="form-control shadow" id="input-correo">
             </div>
-            <div class="form-group shadow">
-              <input type="text" placeholder="Asunto" class="form-control">
+            <div class="form-group ">
+              <input type="text" placeholder="Asunto" class="form-control shadow">
             </div>
-            <div class="form-group shadow">
-              <textarea cols="30" rows="10" placeholder="Mensaje" class="form-control" ></textarea>
+            <div class="form-group ">
+              <textarea cols="30" rows="10" placeholder="Mensaje" class="form-control shadow" style="background-color: rgba(255, 255, 255, 0.65);"></textarea>
             </div>
-            <div class="form-group shadow">
-              <button type="button" class="btn btn-primary form-control">Enviar</button>
+            <div class="form-group ">
+              <button type="button" class="btn form-control" id="btn-contact" disabled>Enviar</button>
             </div>
             
           </form>
