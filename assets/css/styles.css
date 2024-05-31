@@ -38,14 +38,15 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-right: 35px;
+
 }
 .technology:hover{ 
   background-color:#F2F3F4;
 }
 
 .tech_logo{
-  width: 40px;
-  height: 40px;
+  height: 60px;
 }
 
 .certificate{
@@ -76,6 +77,12 @@ body {
   border-right: 2px solid #F4D03F;
 
   background-image: linear-gradient(to left, #FCF3CF , #F9E79F);
+
+  border-radius: 6px;
+  height: 70px;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
 }
 .cont_logo-certificate{
   display: flex;

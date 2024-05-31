@@ -23,9 +23,9 @@
    
   </head>
   <body>
-    <div class="container">
+    <div class="container d-flex flex-column">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top shadow-sm bg-white">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light fixed-top shadow-sm bg-white">
       <div class="container">
         <span class="navbar-brand fs-xs-5 fs-sm-5 fs-lg-4 fs-xl-3" style="color: var(--main-color); font-variant: small-caps;">Isaac Herrera</span>
         <button
@@ -40,45 +40,52 @@
         <div class="collapse navbar-collapse justify-content-end" id="main-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyectos</a>
+              <a class="nav-link" href="#me">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#me">Sobre mi</a>
+              <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#tech">Tecnologías</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacto</a>
+              <a class="nav-link" href="#tools">Herramientas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#achives">Logros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="row mt-5" id="me">
+    <section class="row" id="me">
         <div class="col-md-6">
           <div class="mx-auto p-4">
             <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/FotoIsaac.jpg" alt="Perfil photo" class="rounded-circle shadow" id="perfil-photo"/>
+              <img src="assets/img/foto_porfolio.jpg" alt="Perfil photo" class="rounded-circle shadow" id="perfil-photo"/>
             </div>
             <div class="text-center d-flex flex-column mt-3">
               <h2 class="fs-xs-5 fs-sm-5 fs-md-4">Isaac Moisés Herrera Sandí</h2>
-              <p class="fs-md-6"><strong>Estudiante de Ingeniería de Informática</strong></p>
-              <p class="fs-md-6"><i>Programador Back-end ASP.NET Core 5 C#</i></p>
+              <p class="fs-md-6"><strong>Desarrollador Web - Full-Stack en ClavisCo</strong></p>
+              <p class="fs-md-6"><i>Desarrollador Web - Full-Stack | Angular - .NET</i></p>
             </div>
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-center p-2 bg-gray-10" id="aboutme">
           <div>
             <h2 class="fw-bold fs-xs-4 fs-sm-3 fs-md-5 text-center" style="color:var(--main-color)">Sobre Mi</h2>
-            <p class="fs-xs-6 fs-md-6 text-center">
-              Me llamo Isaac, tengo 20 años, soy estudiante de Ingeniería de sistemas, llevo poco tiempo en el mundo de la programación
-              y tengo muchas ganas de aprender más, me estoy enfocando en el desarrollo web 
-              porque me parece intersante esta rama de la programación, soy una persona honesta y responsable, en mis tiempos libres dibujo o programo.
+            <p class="fs-xs-6 fs-md-6">
+              Me llamo Isaac, tengo 23 años y actualmente me desempeño como Desarrollador Web Full Stack en Clavis Consultores, utilizando tecnologías como .NET, Angular y SQL. Llevo más de dos años en este rol y he desarrollado un fuerte interés en agilizar procesos empresariales de manera programática, creando aplicaciones que transforman tareas tediosas en procesos simples y eficientes.
+<br>
+<br>
+Trabajo tanto en el backend como en el frontend, aunque si tuviera que elegir, optaría por el frontend, ya que me siento más cómodo y considero que mi desempeño es superior en esta área. Disfruto enfrentar retos y me atraen los desarrollos complejos, pues creo que contribuyen significativamente a mi crecimiento personal y profesional. Constantemente pienso en formas de mejorar los procesos de desarrollo y siempre consulto con mis superiores para obtener su opinión antes de implementar nuevas ideas.
+<br>
+<br>
+En mi tiempo libre, me gusta programar y dibujar. Me considero una persona honesta, respetuosa y amable, y siempre busco evitar problemas.
             </p>
           </div>
         </div>
@@ -91,45 +98,154 @@
           <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Proyectos</h2>
         </div>
 
-          <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto mt-4">
+          <div class="mx-auto mt-4 col-sm-6">
             <div class="tarjeta shadow rounded">
               <div class="tarjeta-content rounded-left">
-                <p class="tarjeta-name">Traductor binario</p>
-                <p class="tarjeta-description">Traduce del código binario a texto y viceversa</p>
-                <a href="https://github.com/Isaac-hs47/Binary-translator.git" class="tarjeta-button btn-block" target="_blank">Ver Código</a>
+                <p class="tarjeta-name">Easy Market App (EMA)</p>
+                <p class="tarjeta-description mt-1">Punto de venta integrado con SAP Business One. Proporciona una amplia gama de funcionalidades diseñadas para optimizar la administración empresaria</p>
               </div>
               <div class="tarjeta-part-blue rounded-right">
-                <img src="./assets/img/bin_icon.ico" alt="icon" class="tarjeta-icon ">
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto mt-4">
-            <div class="tarjeta shadow rounded">
-              <div class="tarjeta-content rounded-left">
-                <p class="tarjeta-name">Tic Tac Toe</p>
-                <p class="tarjeta-description">Es un juego, que se basa de ir marcando casillas hasta que haya un ganador</p>
-                <a href="https://github.com/Isaac-hs47/Tic-Tac-Toe.git" class="tarjeta-button btn-block" target="_blank">Ver Código</a>
-              </div>
-              <div class="tarjeta-part-blue rounded-right">
-                <ul class="h4 text-white font-weight-bold">
-                  <li>X   </li>
-                  <li class="pl-3">   O</li>
-                  <li>   X</li>
-                </ul>
+                <img src="./assets/img/ema_logo.webp" style="width: calc(100% - 40px);" alt="icon" class="tarjeta-icon ">
               </div>
             </div>
           </div>
 
       </section>
 
-      <section class="row border-bottom bg-gray-10" id="tech"></section>
+      <section class="row bg-gray-10 pt-1" id="tech">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Tecnologías</h2>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center align-items-center flex-wrap px-3">
+
+          <div class="technology" title="Angular">
+              <img src="./assets/img/angular-logo.png" class="tech_logo" alt="Angular">
+          </div>
+
+          <div class="technology" title="Typescript">
+            <img src="./assets/img/Typescript_logo.png" class="tech_logo" alt="Typescript">
+          </div>
+
+          <div class="technology" title="Javascript">
+            <img src="./assets/img/js_logo.png" class="tech_logo" alt="Javascript">
+          </div>
+
+          <div class="technology" title="RxJS">
+            <img src="./assets/img/rxjs_logo.png" class="tech_logo" alt="RxJs">
+          </div>
+
+          <div class="technology" title="Cascade Style Sheet">
+            <img src="./assets/img/css_logo.png" class="tech_logo" alt="CSS">
+          </div>
+
+          <div class="technology" title="HTML5">
+            <img src="./assets/img/htm5_logo.png" class="tech_logo" alt="HTML5">
+          </div>
+
+          <div class="technology" title="Bootstrap">
+            <img src="./assets/img/bootstrap_logo.png" class="tech_logo" alt="Bootstrap">
+          </div>
+
+          <div class="technology" title="Ionic Framework">
+            <img src="./assets/img/Ionic_Logo.png" class="tech_logo" style="height: 30px;" alt="Ionic">
+          </div>
+
+          <div class="technology" title="C#">
+            <img src="./assets/img/Csharp_Logo.png" class="tech_logo" alt="C#">
+          </div>
+
+          <div class="technology" title=".NET Core">
+            <img src="./assets/img/net_core_logo.png" class="tech_logo" alt=".NET Core">
+          </div>
+
+          <div class="technology" title="SQL">
+            <img src="./assets/img/iconoSQL.png" class="tech_logo" alt="SQL">
+          </div>
+
+          <div class="technology" title="Git">
+            <img src="./assets/img/git_logo.png" class="tech_logo" alt="GIT">
+          </div>
+        </div>
+      </section>
+
+      <section class="row pt-1 mt-2" id="tools">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Herramientas</h2>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center align-items-center flex-wrap px-3">
+
+          <div class="technology" title="ERP - SAP Business One">
+            <img src="./assets//img/SAPB1_logo.webp" class="tech_logo" style="height: 30px;" alt="SAP Business One">
+          </div>
+
+          <div class="technology" title="SAP Hana Studio">
+            <img src="./assets/img/sap_hana.png" class="tech_logo" style="height: 50px;"  alt="SAP Hana Studio">
+          </div>
+
+          <div class="technology" title="SQL Server">
+            <img src="./assets/img/mssqlserver_logo.png" class="tech_logo" style="height: 50px;"  alt="SQL Server">
+          </div>
+
+          <div class="technology" title="Jira">
+            <img src="./assets/img/atlassian_logo.png" class="tech_logo" alt="Jira">
+          </div>
+
+          <div class="technology" title="Bitbucket">
+            <img src="./assets/img/bitbucket_logo.png" class="tech_logo" style="height: 25px;" alt="Bitbucket">
+          </div>
+
+          <div class="technology" title="Git Hub">
+            <img src="./assets/img/github_logo.png" class="tech_logo" alt="Git Hub">
+          </div>
+
+          <div class="technology" title="Jet Brains Rider">
+            <img src="./assets/img/rider.svg" class="tech_logo" style="height: 50px;" alt="Jet Brains Rider">
+          </div>
+
+          <div class="technology" title="Visual Studio Code">
+            <img src="./assets/img/visual-studio-code-logo.webp" class="tech_logo" style="height: 50px;"  alt="Visual Studio Code">
+          </div>
+
+          <div class="technology" title="Visual Studio">
+            <img src="./assets/img/Visual_Studio_Icon_2022.png" class="tech_logo" alt="Visual Studio">
+          </div>
+        </div>
+      </section>
 
 
-      <section class="row pt-2" id="achives">
+      <section class="row mt-2 pt-1 pb-3 bg-gray-10" id="achives">
         <div class="col-sm-12">
           <div class="text-center">
             <h2 class="fw-bold fs-xs-4 fs-sm-3" style="color:var(--main-color)">Logros</h2>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate certificate-gold">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Desarrollador Web - Full-stack en ClavisCo</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 mt-4">
+          <div class="certificate">
+            <div class="cont_logo-certificate">
+              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
+            </div>
+            <div class="name-certificate">
+              <span>Nivel intermedio en tecnologías Front-end</span>
+            </div>
           </div>
         </div>
 
@@ -139,45 +255,32 @@
               <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
             </div>
             <div class="name-certificate">
-              <span>Nivel Básico-Intermedio en tecnologías Front-end</span>
+              <span>Nivel intermedio en .NET</span>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 mt-4">
-          <div class="certificate certificate-bronze">
+          <div class="certificate">
             <div class="cont_logo-certificate">
               <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
             </div>
             <div class="name-certificate">
-              <span>Principiante en ASP.NET Core 5</span>
+              <span>Conocimiento basico-intermedio en SQL</span>
             </div>
           </div>
         </div>
 
         <div class="col-sm-6 mt-4">
-          <div class="certificate certificate-bronze">
+          <div class="certificate">
             <div class="cont_logo-certificate">
               <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
             </div>
             <div class="name-certificate">
-              <span>Programador en C#</span>
+              <span>Conocimiento basico de ERP SAP Business One</span>
             </div>
           </div>
         </div>
-
-        <div class="col-sm-6 mt-4">
-          <div class="certificate certificate-bronze">
-            <div class="cont_logo-certificate">
-              <img class="logo-certificate" src="./assets/img/medalla.png" alt="Certificate">
-            </div>
-            <div class="name-certificate">
-              <span>Conocimiento básico de SQL</span>
-            </div>
-          </div>
-        </div>
-
-       
       </section>
 
       <footer class="row rounded" id="contact">
@@ -215,6 +318,21 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
      
       <!-- CUSTOM Scripts -->
-      <script src="assets/js/app.js" type="module"></script>
+      <script>
+
+          const NAV = document.getElementById("nav");
+
+          const ME = document.getElementById("me");
+
+          ME.setAttribute("style", `margin-top: ${NAV.offsetHeight + 15}px`);
+
+          document.addEventListener("click", (e) => {
+            if (e.target.matches(".nav-link") && screen.width < 768) {
+              const $MENU = document.getElementById("main-nav");
+              $MENU.classList.remove("show");
+            }
+          });
+
+      </script>
   </body>
 </html>
